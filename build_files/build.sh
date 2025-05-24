@@ -16,5 +16,8 @@ dnf5 -y copr enable pgdev/ghostty
 dnf5 install -y ghostty
 dnf5 -y copr disable pgdev/ghostty
 
+dnf5 -y swap fedora-logos aurora-logos
+dnf5 -y remove aurora-plymouth
+
 dnf5 autoremove -y
 dnf5 clean all -y
